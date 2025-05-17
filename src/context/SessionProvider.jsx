@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
 const SessionContext = createContext();
-const API_URL = 'http://localhost:5000/api/auth'; // Adjust if port differs
+const API_URL = 'https://country-explorer-be.vercel.app/api/auth'; // Adjust if port differs
 
 export const SessionProvider = ({ children }) => {
   const [user, setUser] = useState(null);

@@ -88,7 +88,7 @@ describe('SessionProvider', () => {
 
         expect(screen.getByText('Logged in as: testuser')).toBeInTheDocument();
         expect(axios.post).toHaveBeenCalledWith(
-            'http://localhost:5000/api/auth/login',
+            'https://country-explorer-be.vercel.app/api/auth/login',
             { username: 'testuser', password: 'password123' },
             { withCredentials: true }
         );
